@@ -2,71 +2,144 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-	<meta name="author=" content="tailofmoon">
-	<title>Page 3D</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="nothinghill.css">
+	<title>Seenema: Movie</title>
+	<link rel="stylesheet" type="text/css" href="movie.css">
+	<!-- Swiper -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 </head>
 <body>
 	<header>
-		<img src="img/logo.png" alt="Seenema Logo" height="40px" id="logo">
-		<nav>
-			<ul>
-				<li>MENU1</li>
-				<li>MENU2</li>
-				<li>MENU3</li>
-				<li>MENU4</li>
-			</ul>
-		</nav>
+		<div class="wrapper">
+			<img src="img/logo.png" alt="Seenema Logo" height="40px" id="logo">
+			<nav>
+				<ul>
+					<li><a href="#">MENU1</a></li>
+					<li><a href="#">MENU2</a></li>
+					<li><a href="#">MENU3</a></li>
+					<li><a href="#">MENU4</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 
-	<div class="container">
-		<div class="wrapper">
-			<div class="page">
-				<img src="img/movie/poster/nothinghill.jpeg" alt="nothinghill poster" height="500px" id="poster">
-				<div id="movie">
-					<div>
-						<span class="title">Nothing Hill</span>
-						<span class="year">1999</span>
-					</div>
-					<div>
-						<div class="detail">
-							<strong>개요</strong>&nbsp;&nbsp;&nbsp;&nbsp;멜로/로맨스, 코미디&nbsp;&nbsp;영국&nbsp;&nbsp;124분<br>
-							<strong>감독</strong>&nbsp;&nbsp;&nbsp;&nbsp;Roger Michell<br>
-							<strong>출연</strong>&nbsp;&nbsp;&nbsp;&nbsp;Julia Roberts, HughGrant<br>
-						</div>
-						<div class="detail">
-						세계적인 스타라면 한번쯤 해보고 싶은 로맨스! 평범한 남자라면 꼭 한번 해보고 싶은 스캔들!<br><br>
-						윌리엄 대커는 웨스트 런던의 노팅힐에 사는 소심한 남자. 독신인 괴상한 친구 스파이크와 함께 살고 있는 그는 노팅힐 시장 한쪽 구석에 위치한 조그만 여행 서적 전문점을 운영하고 있다. 여느 때와 마찬가지로 무미건조한 하루를 보내고 있던 그는 세계적으로 유명한 인기 영화배우 안나 스콧이 그의 책방 문을 열고 들어와 책을 사고 나가자 잠깐 동안 일어난 이 엄청난 사건에 어쩔 줄을 모른다. 몇 분 뒤 오렌지 주스를 사서 돌아오던 그는 길 모퉁이를 돌던 안나와 부딪혀 그녀에게 주스를 모두 쏟고 만다. 윌리엄은 근처에 있는 자신의 집으로 그녀를 안내해 씻고 옷을 갈아 입도록 한다. 그리고 헤어지기 전 받은 그녀의 갑작스런 키스를 잊지 못한다. 며칠 후 안나는 전화를 걸어 자신이 묵고 있는 호텔로 윌리엄을 초대하는데...
-						</div>
-					</div>
-				</div>
-			</div>
+	<section>
+		<article>
+			<h2>현재 상영작</h2>
+			<!-- Slider main container -->
+    		<div class="swiper-container">
+       		<!-- Additional required wrapper -->
+        		<div class="swiper-wrapper">
+            <!-- Slides ::슬라이더 -->
+            	<div class="swiper-slide"><a href="nothinghill.html"><img src="img/movie/poster/nothinghill.jpeg" alt="nothinghill poster" height="400px"></a></div>
+            	<div class="swiper-slide"><a href="nothinghill.html"><img src="img/movie/poster/callmeby.jpeg" alt="callmebyyourname poster" height="400px"></a></div>
+            	<div class="swiper-slide"><img src="img/movie/poster/nothinghill.jpeg" alt="nothinghill poster" height="400px"></div>
+            	<div class="swiper-slide"><img src="img/movie/poster/callmeby.jpeg" alt="callmebyyourname poster" height="400px"></div>
+            	<div class="swiper-slide"><img src="img/movie/poster/nothinghill.jpeg" alt="nothinghill poster" height="400px"></div>
+            	<div class="swiper-slide"><img src="img/movie/poster/callmeby.jpeg" alt="callmebyyourname poster" height="400px"></div>
+        	</div>
 
-			<div class="page">
-				<h1>picture</h1>			
-			</div>
-			<div class="page">
-				<h1>review</h1>
-			</div>
-			<div class="page">
-				<h1>etc</h1>
-				<!-- <ul class="icons">
-					<li><a href="#"><i class="fa fa-home fa-3x"></i></a></li>
-					<li><a href="#"><i class="fa fa-cog fa-3x"></i></a></li>
-					<li><a href="#"><i class="fa fa-camera-retro fa-3x"></i></a></li>
-				</ul> -->				
-			</div>
-		</div>
-	</div>
+       		<!-- If we need pagination ::페이지 네비게이션(선택) -->
+        		<!-- <div class="swiper-pagination"></div> -->
 
-	<ul id=indicator>
-	</ul>
+        	<!-- If we need navigation buttons ::양옆 좌우 버튼(선택) -->
+       	 		<div class="swiper-button-next"></div>
+        		<div class="swiper-button-prev"></div>
+    		</div>
 
-	<script src="js/main.js"></script>
+    		<h2>추천 영화</h2>
+			<!-- Slider main container -->
+    		<div class="swiper-container">
+       		<!-- Additional required wrapper -->
+        		<div class="swiper-wrapper">
+            <!-- Slides ::슬라이더 -->
+            	<div class="swiper-slide"><img src="img/movie/poster/nothinghill.jpeg" alt="nothinghill poster" height="400px"></div>
+            	<div class="swiper-slide"><img src="img/movie/poster/callmeby.jpeg" alt="callmebyyourname poster" height="400px"></div>
+            	<div class="swiper-slide"><img src="img/movie/poster/nothinghill.jpeg" alt="nothinghill poster" height="400px"></div>
+            	<div class="swiper-slide"><img src="img/movie/poster/callmeby.jpeg" alt="callmebyyourname poster" height="400px"></div>
+            	<div class="swiper-slide"><img src="img/movie/poster/nothinghill.jpeg" alt="nothinghill poster" height="400px"></div>
+            	<div class="swiper-slide"><img src="img/movie/poster/callmeby.jpeg" alt="callmebyyourname poster" height="400px"></div>
+        	</div>
+
+       		<!-- If we need pagination ::페이지 네비게이션(선택) -->
+        		<!-- <div class="swiper-pagination"></div> -->
+
+        	<!-- If we need navigation buttons ::양옆 좌우 버튼(선택) -->
+       	 		<div class="swiper-button-next"></div>
+        		<div class="swiper-button-prev"></div>
+    		</div>
+
+    		<h2>인기 영화</h2>
+			<!-- Slider main container -->
+    		<div class="swiper-container">
+       		<!-- Additional required wrapper -->
+        		<div class="swiper-wrapper">
+            <!-- Slides ::슬라이더 -->
+            	<div class="swiper-slide"><img src="img/movie/poster/nothinghill.jpeg" alt="nothinghill poster" height="400px"></div>
+            	<div class="swiper-slide"><img src="img/movie/poster/callmeby.jpeg" alt="callmebyyourname poster" height="400px"></div>
+            	<div class="swiper-slide"><img src="img/movie/poster/nothinghill.jpeg" alt="nothinghill poster" height="400px"></div>
+            	<div class="swiper-slide"><img src="img/movie/poster/callmeby.jpeg" alt="callmebyyourname poster" height="400px"></div>
+            	<div class="swiper-slide"><img src="img/movie/poster/nothinghill.jpeg" alt="nothinghill poster" height="400px"></div>
+            	<div class="swiper-slide"><img src="img/movie/poster/callmeby.jpeg" alt="callmebyyourname poster" height="400px"></div>
+        	</div>
+
+       		<!-- If we need pagination ::페이지 네비게이션(선택) -->
+        		<!-- <div class="swiper-pagination"></div> -->
+
+        	<!-- If we need navigation buttons ::양옆 좌우 버튼(선택) -->
+       	 		<div class="swiper-button-next"></div>
+        		<div class="swiper-button-prev"></div>
+    		</div>
+
+
+    <!-- Initialize Swiper -->
+    <script>
+
+    document.addEventListener("DOMContentLoaded", function() {
+
+    var mySwiper = new Swiper('.swiper-container', {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        observer: true,
+        observeParents: true,
+        spaceBetween: 5,
+
+        loopFillGroupWithBlank : true,
+
+        loop: false, // loop 를 true 로 할경우 무한반복 슬라이드, false 로 할경우 슬라이드의 끝에서 더보여지지 않음
+
+        // If we need pagination 
+        pagination: {
+            el: '.swiper-pagination',
+            clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+            // type: 'progressbar', // And if we need scrollbar 진행바
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            1280: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+            },
+            720: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+            }
+        }
+    });
+    });
+    </script>
+
+    
+		</article>
+	</section>
+
+	<footer></footer>
+
 </body>
 </html>
+
+	
